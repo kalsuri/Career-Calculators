@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation History</title>
+</head>
+<body>
+    <h1>Calculation History</h1>
+    <ul>
+        {% for result in results %}
+            <li>{{ result.id }}: {{ result.result }} <a href="/delete/{{ result.id }}">Delete</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+</body>
+</html>
